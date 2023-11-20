@@ -106,7 +106,7 @@ form {
     justify-self: center;
 }
 
-.container>.sidebar {
+.sidebar {
     background-color: rgb(16, 130, 212);
     grid-area: 1 / 1 / 3;
     display: grid;
@@ -116,27 +116,6 @@ form {
     font-weight: bolder;
 }
 
-.sidebar>.header>ul>li {
-    font-size: 2rem;
-    list-style-type: none;
-}
-
-.header>ul>li>img {
-    vertical-align: middle;
-    margin-right: 10px;
-}
-
-.sidebar>.main>ul>li,
-.sidebar>.footer>ul>li {
-    font-size: 1.5rem;
-    list-style-type: none;
-    margin: 25px 0;
-}
-
-.main>ul>li>img {
-    margin-right: 10px;
-    vertical-align: -6px;
-}
 
 .main-content {
     background-color: rgba(226, 232, 240, 1);
