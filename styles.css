@@ -9,11 +9,6 @@ body {
     box-sizing: border-box;
 }
 
-a {
-    text-decoration-line: none;
-    color: inherit;
-}
-
 .container {
     height: 100vh;
     width: 100vw;
@@ -40,7 +35,7 @@ form {
 }
 
 .search-btn {
-    background-image: url(icons/magnify.svg);
+    background-image: url(icons/header/magnify.svg);
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
@@ -59,6 +54,7 @@ form {
 
 .notification {
     justify-self: end;
+    height: 30px;
     width: 30px;
 }
 
@@ -93,9 +89,9 @@ form {
     width: 100px;
 }
 
-.header-btn:hover,
-.search-btn:hover {
+.web-link:hover {
     cursor: pointer;
+    transform: scale(1.08);
 }
 
 #new-btn {
@@ -108,12 +104,63 @@ form {
 
 .sidebar {
     background-color: rgb(16, 130, 212);
-    grid-area: 1 / 1 / 3;
     display: grid;
-    grid-auto-flow: row;
-    grid-template-rows: auto auto 1fr;
+    grid-row: 1 / 3;
+    grid-template-rows: 100px 400px 200px;
+    align-items: center;
+    gap: 50px;
     color: white;
     font-weight: bolder;
+}
+
+.sidebar img {
+    filter: invert(100%);
+    justify-self: center;
+}
+
+.sidebar>.header img {
+    height: 60px;
+    width: 60px;
+}
+
+.sidebar>.main img,
+.sidebar>.footer img {
+    height: 30px;
+    width: 30px;
+}
+
+.sidebar>.header>div {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 2fr;
+    font-size: 25px;
+    align-items: center;
+}
+
+.sidebar>.main {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    font-size: 20px;
+}
+
+.sidebar>.main>div {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.sidebar>.footer {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    font-size: 20px;
+}
+
+.sidebar>.footer>div {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
 }
 
 
