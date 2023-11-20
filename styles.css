@@ -124,7 +124,8 @@ form {
 }
 
 .sidebar>.main img,
-.sidebar>.footer img {
+.sidebar>.footer img,
+.main-content>img {
     height: 30px;
     width: 30px;
 }
@@ -167,6 +168,21 @@ form {
 .main-content {
     background-color: rgba(226, 232, 240, 1);
     grid-area: 2 / 2;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 
-/* borders color rgba(240, 180, 41, 1) */
+.projects {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+
+.projects>.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit minmax(200px, 1fr));
+}
+
+
+cards {
+    borders color rgba(240, 180, 41, 1)
+}
